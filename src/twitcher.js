@@ -61,20 +61,20 @@ class Twitcher extends Component {
                     this.setState({
                         fcc: [
                             <div className="fcc">
-                                <div>{response.data.stream.channel.display_name}</div>
-                                <div>{response.data.stream.channel.status}</div>
-                                <div>{response.data.stream.game}</div>
-                                <div><img src={response.data.stream.channel.logo}/></div>
+                                <span><img src={response.data.stream.channel.logo} /></span>
+                                <div><a target="_blank" href="https://www.twitch.tv/freecodecamp">Name: {response.data.stream.channel.display_name}</a></div>
+                                <div>Game: {response.data.stream.game}</div>
+                                <div>Status: {response.data.stream.channel.status}</div>
                             </div>
                         ]
                     })
                 } else {
                     this.setState({
                         fcc: [
-                        <div className="fcc">
-                            <div>FreeCodeCamp</div>
-                            <div>Offline</div>
-                        </div>
+                            <div className="fcc">
+                                <div><a target="_blank" href="https://www.twitch.tv/freecodecamp">FreeCodeCamp</a></div>
+                                <div>Offline</div>
+                            </div>
                         ]
                     })
                 }
@@ -90,22 +90,20 @@ class Twitcher extends Component {
                     this.setState({
                         ESL_SC2: [
                             <div className="fcc">
-                            <span><img src={response.data.stream.channel.logo}/></span>
-                                <div>{response.data.stream.channel.display_name}</div>
-                                <div>{response.data.stream.game}</div>
-                                <div>{response.data.stream.channel.status}</div>
-                                
-                                
+                                <span><img src={response.data.stream.channel.logo} /></span>
+                                <div><a target="_blank" href="https://www.twitch.tv/ESL_SC2">Name: {response.data.stream.channel.display_name}</a></div>
+                                <div>Game: {response.data.stream.game}</div>
+                                <div>Status: {response.data.stream.channel.status}</div>
                             </div>
                         ]
                     })
                 } else {
                     this.setState({
                         ESL_SC2: [
-                        <div className="fcc">
-                            <div>ESL_SC2</div>
-                            <div>Offline</div>
-                        </div>
+                            <div className="fcc">
+                                <div><a target="_blank" href="https://www.twitch.tv/ESL_SC2">ESL_SC2</a></div>
+                                <div>Offline</div>
+                            </div>
                         ]
                     })
                 }
@@ -120,20 +118,20 @@ class Twitcher extends Component {
                     this.setState({
                         noobs2ninjas: [
                             <div className="fcc">
-                                <div>{response.data.stream.channel.display_name}</div>
-                                <div>{response.data.stream.channel.status}</div>
+                                <div><img src={response.data.stream.channel.logo} /></div>
+                                <div><a target="_blank" href="https://www.twitch.tv/noobs2ninjas">{response.data.stream.channel.display_name}</a></div>
                                 <div>{response.data.stream.game}</div>
-                                <div><img src={response.data.stream.channel.logo}/></div>
+                                <div>{response.data.stream.channel.status}</div>
                             </div>
                         ]
                     })
                 } else {
                     this.setState({
                         noobs2ninjas: [
-                        <div className="fcc">
-                            <div>noobs2ninjas</div>
-                            <div>Offline</div>
-                        </div>
+                            <div className="fcc">
+                                <div><a target="_blank" href="https://www.twitch.tv/noobs2ninjas">noobs2ninjas</a></div>
+                                <div>Offline</div>
+                            </div>
                         ]
                     })
                 }
@@ -148,20 +146,20 @@ class Twitcher extends Component {
                     this.setState({
                         MrMoonsHouse: [
                             <div className="fcc">
-                                <div>{response.data.stream.channel.display_name}</div>
-                                <div>{response.data.stream.channel.status}</div>
-                                <div>{response.data.stream.game}</div>
-                                <div><img src={response.data.stream.channel.logo}/></div>
+                                <span><img src={response.data.stream.channel.logo} /></span>
+                                <div><a target="_blank" href="https://www.twitch.tv/mrmoonshouse">Name: {response.data.stream.channel.display_name}</a></div>
+                                <div>Game: {response.data.stream.game}</div>
+                                <div>Status: {response.data.stream.channel.status}</div>
                             </div>
                         ]
                     })
                 } else {
                     this.setState({
                         MrMoonsHouse: [
-                        <div className="fcc">
-                            <div>MrMoonsHouse</div>
-                            <div>Offline</div>
-                        </div>
+                            <div className="fcc">
+                                <div><a target="_blank" href="https://www.twitch.tv/mrmoonshouse">MrMoonsHouse</a></div>
+                                <div>Offline</div>
+                            </div>
                         ]
                     })
                 }
@@ -176,20 +174,20 @@ class Twitcher extends Component {
                     this.setState({
                         Shroud: [
                             <div className="fcc">
-                                <div>{response.data.stream.channel.display_name}</div>
-                                <div>{response.data.stream.channel.status}</div>
-                                <div>{response.data.stream.game}</div>
-                                <div><img src={response.data.stream.channel.logo}/></div>
+                                <span><img src={response.data.stream.channel.logo} /></span>
+                                <div><a target="_blank" href="https://www.twitch.tv/shroud">Name: {response.data.stream.channel.display_name}</a></div>
+                                <div>Game: {response.data.stream.game}</div>
+                                <div>Status: {response.data.stream.channel.status}</div>
                             </div>
                         ]
                     })
                 } else {
                     this.setState({
                         Shroud: [
-                        <div className="fcc">
-                            <div>Shroud</div>
-                            <div>Offline</div>
-                        </div>
+                            <div className="fcc">
+                                <div><a target="_blank" href="https://www.twitch.tv/shroud">Shroud</a></div>
+                                <div>Offline</div>
+                            </div>
                         ]
                     })
                 }
@@ -204,20 +202,20 @@ class Twitcher extends Component {
                     this.setState({
                         JoshOG: [
                             <div className="fcc">
-                                <div>{response.data.stream.channel.display_name}</div>
-                                <div>{response.data.stream.channel.status}</div>
-                                <div>{response.data.stream.game}</div>
-                                <div><img src={response.data.stream.channel.logo}/></div>
+                                <span><img src={response.data.stream.channel.logo} /></span>
+                                <div><a target="_blank" href="https://www.twitch.tv/JoshOG">Name: {response.data.stream.channel.display_name}</a></div>
+                                <div>Game: {response.data.stream.game}</div>
+                                <div>Status: {response.data.stream.channel.status}</div>
                             </div>
                         ]
                     })
                 } else {
                     this.setState({
                         JoshOG: [
-                        <div className="fcc">
-                            <div>JoshOG</div>
-                            <div>Offline</div>
-                        </div>
+                            <div className="fcc">
+                                <div><a target="_blank" href="https://www.twitch.tv/JoshOG">JoshOG</a></div>
+                                <div>Offline</div>
+                            </div>
                         ]
                     })
                 }
@@ -232,20 +230,20 @@ class Twitcher extends Component {
                     this.setState({
                         H3H3: [
                             <div className="fcc">
-                                <div>{response.data.stream.channel.display_name}</div>
-                                <div>{response.data.stream.channel.status}</div>
-                                <div>{response.data.stream.game}</div>
-                                <div><img src={response.data.stream.channel.logo}/></div>
+                                <span><img src={response.data.stream.channel.logo} /></span>
+                                <div><a target="_blank" href="https://www.twitch.tv/H3H3">Name: {response.data.stream.channel.display_name}</a></div>
+                                <div>Game: {response.data.stream.game}</div>
+                                <div>Status: {response.data.stream.channel.status}</div>
                             </div>
                         ]
                     })
                 } else {
                     this.setState({
                         H3H3: [
-                        <div className="fcc">
-                            <div>H3H3</div>
-                            <div>Offline</div>
-                        </div>
+                            <div className="fcc">
+                                <div><a target="_blank" href="https://www.twitch.tv/H3H3">H3H3</a></div>
+                                <div>Offline</div>
+                            </div>
                         ]
                     })
                 }
@@ -261,20 +259,20 @@ class Twitcher extends Component {
                     this.setState({
                         Summit1G: [
                             <div className="fcc">
-                                <div>{response.data.stream.channel.display_name}</div>
-                                <div>{response.data.stream.channel.status}</div>
-                                <div>{response.data.stream.game}</div>
-                                <div><img src={response.data.stream.channel.logo}/></div>
+                                <span><img src={response.data.stream.channel.logo} /></span>
+                                <div><a target="_blank" href="https://www.twitch.tv/Summit1G">Name: {response.data.stream.channel.display_name}</a></div>
+                                <div>Game: {response.data.stream.game}</div>
+                                <div>Status: {response.data.stream.channel.status}</div>
                             </div>
                         ]
                     })
                 } else {
                     this.setState({
                         Summit1G: [
-                        <div className="fcc">
-                            <div>Summit1G</div>
-                            <div>Offline</div>
-                        </div>
+                            <div className="fcc">
+                                <div><a target="_blank" href="https://www.twitch.tv/Summit1G">Summit1G</a></div>
+                                <div>Offline</div>
+                            </div>
                         ]
                     })
                 }
@@ -313,9 +311,13 @@ class Twitcher extends Component {
     render() {
         return (
             <div className='container'>
-                <div className='search'>
+                <div className="twitchTitle">
+                    <div> TWITCH VIEWER </div>
+                    {/* <div className='search'>
                     <input className="searchbar" placeholder="Search for more users"></input>
+                </div> */}
                 </div>
+
                 <div className="channelBlock">{this.state.fcc}</div>
                 <div className="channelBlock">{this.state.H3H3}</div>
                 <div className="channelBlock">{this.state.JoshOG}</div>
