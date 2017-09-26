@@ -18,3 +18,14 @@ img{
     height:100%;
     max-width:100px;
 }
+
+.twitchTitle {
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 0px 0px 5px white;
+}
+
+.fcc {
+    font-size: 16px;
+   
+}
